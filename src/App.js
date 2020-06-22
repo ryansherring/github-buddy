@@ -5,9 +5,12 @@ import {Card, Container, CardColumns, Col, Row} from 'react-bootstrap'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import background from './images/background.jpg'
+
+
 function App() {
   const [user, setUser] = useState("");
   const [query, setQuery] = useState("");
+  const [languages, setLanguages] = useState()
 
   //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -32,10 +35,11 @@ function App() {
           <input
             type="text"
             className="search-bar"
-            placeholder="Press Enter to Search..."
+            placeholder="Search here..."
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
+            style={{textAlign: "center"}}
           />
           
         </div>
@@ -43,7 +47,7 @@ function App() {
         {user ? (
           <Container style={{borderWidth: ".2rem .2rem 0", borderRadius: "8px 8px 0 0", borderColor: "grey", marginTop: "5vh"}}>
           <CardColumns className = "mx-auto">
-            <Card>
+            <Card >
               <Card.Header><h4>Name:</h4></Card.Header>
               
               {user.name != null ? <p>{user.name}</p> : <p>add a name!</p>}
@@ -98,7 +102,7 @@ function App() {
           </CardColumns>
           </Container>
         ) : (
-          <Card className = "mx-auto" style={{width: "40%", marginTop: "10vh"}}>
+          <Card className = "mx-auto" style={{width: "40%", marginTop: "10vh", padding: "1%"}}>
               Github-Buddy checks to make sure you have your profile filled out
               and with the right information! Currently working on adding a pie
               chart of languages used and a suggestion for your next project.
