@@ -10,7 +10,9 @@ import background from './images/background.jpg'
 function App() {
   const [user, setUser] = useState("");
   const [query, setQuery] = useState("");
-  const [languages, setLanguages] = useState()
+  const [languages, setLanguages] = useState([]);
+  const [fetching, setFetching] = useState(false);
+  const [errormsg, setErrormsg] = useState("");
 
   //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -23,7 +25,7 @@ function App() {
           setUser(res);
           console.log(res);
           setQuery("");
-        });
+        })
     }
   };
 
@@ -93,19 +95,18 @@ function App() {
                 <p>add an email to your profile!</p>
               )}
             </Card>
-            <Card className = "mx-auto">
+            {/* <Card className = "mx-auto">
               <Card.Header><h4>Laguages Used:</h4></Card.Header> Feature  coming soon
               </Card>
             <Card className = "mx-auto">
               <Card.Header><h4>Suggestion for Next Project:</h4></Card.Header>Feature  coming soon
-              </Card>
+              </Card> */}
           </CardColumns>
           </Container>
         ) : (
           <Card className = "mx-auto" style={{width: "40%", marginTop: "10vh", padding: "1%"}}>
               Github-Buddy checks to make sure you have your profile filled out
-              and with the right information! Currently working on adding a pie
-              chart of languages used and a suggestion for your next project.
+              and with the right information!
               <br />
               Search for your username and press enter to get started!
             </Card>
