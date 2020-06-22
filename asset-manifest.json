@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/github-buddy/static/css/main.f45226ac.chunk.css",
+    "main.js": "/github-buddy/static/js/main.8fa125e8.chunk.js",
+    "main.js.map": "/github-buddy/static/js/main.8fa125e8.chunk.js.map",
+    "runtime-main.js": "/github-buddy/static/js/runtime-main.7059fd2f.js",
+    "runtime-main.js.map": "/github-buddy/static/js/runtime-main.7059fd2f.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/github-buddy/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.a8275b6a.chunk.js": "/github-buddy/static/js/2.a8275b6a.chunk.js",
+    "static/js/2.a8275b6a.chunk.js.map": "/github-buddy/static/js/2.a8275b6a.chunk.js.map",
+    "index.html": "/github-buddy/index.html",
+    "precache-manifest.430811cf58a406b3f79e2ad34fed432e.js": "/github-buddy/precache-manifest.430811cf58a406b3f79e2ad34fed432e.js",
+    "service-worker.js": "/github-buddy/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/github-buddy/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.f45226ac.chunk.css.map": "/github-buddy/static/css/main.f45226ac.chunk.css.map",
+    "static/js/2.a8275b6a.chunk.js.LICENSE.txt": "/github-buddy/static/js/2.a8275b6a.chunk.js.LICENSE.txt",
+    "static/media/background.jpg": "/github-buddy/static/media/background.3960c1e7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7059fd2f.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.a8275b6a.chunk.js",
+    "static/css/main.f45226ac.chunk.css",
+    "static/js/main.8fa125e8.chunk.js"
+  ]
+}
