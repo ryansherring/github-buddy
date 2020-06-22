@@ -1,0 +1,1 @@
+Github Buddy is a simple app that allows you to see if your github is fully fleshed out and if it has the correct information.
